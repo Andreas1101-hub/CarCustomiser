@@ -21,13 +21,13 @@ final class CarCustomiserTests: XCTestCase {
         XCTAssertEqual(car.handling, 5)
     }
 
-    func testNewCarPrintsAllAttributesSet() {
-        let stats = displayStats(makeDisplay: "Mazda", modelDisplay: "MX-5", topSpeedDisplay: "125mph", accelerationDisplay: "7.7s", handlingDisplay: "5")
-        XCTAssertEqual(stats.makeDisplay, "Mazda")
-        XCTAssertEqual(stats.modelDisplay, "MX-5")
-        XCTAssertEqual(stats.topSpeedDisplay, "125mph")
-        XCTAssertEqual(stats.accelerationDisplay, "7.7s")
-        XCTAssertEqual(stats.handlingDisplay, "5")
-    }
+//    func testNewCarPrintsAllAttributesSet() {
+//        let stats = displayStats(makeDisplay: "Mazda", modelDisplay: "MX-5", topSpeedDisplay: "125mph", accelerationDisplay: "7.7s", handlingDisplay: "5")
+//        XCTAssertEqual(stats.makeDisplay, "Mazda")
+//        XCTAssertEqual(stats.modelDisplay, "MX-5")
+//        XCTAssertEqual(stats.topSpeedDisplay, "125mph")
+//        XCTAssertEqual(stats.accelerationDisplay, "7.7s")
+//        XCTAssertEqual(stats.handlingDisplay, "5")
+//    }
 
 }

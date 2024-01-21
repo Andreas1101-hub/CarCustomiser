@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C24055622B5C7FC000944074 /* StarterCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24055612B5C7FC000944074 /* StarterCars.swift */; };
 		C29F71092B50457E00A7D139 /* CarCustomiserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29F71082B50457E00A7D139 /* CarCustomiserApp.swift */; };
 		C29F710B2B50457E00A7D139 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29F710A2B50457E00A7D139 /* ContentView.swift */; };
 		C29F710D2B50457F00A7D139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C29F710C2B50457F00A7D139 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C24055612B5C7FC000944074 /* StarterCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterCars.swift; sourceTree = "<group>"; };
 		C29F71052B50457E00A7D139 /* CarCustomiser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarCustomiser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C29F71082B50457E00A7D139 /* CarCustomiserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCustomiserApp.swift; sourceTree = "<group>"; };
 		C29F710A2B50457E00A7D139 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				C29F71082B50457E00A7D139 /* CarCustomiserApp.swift */,
 				C29F710A2B50457E00A7D139 /* ContentView.swift */,
+				C24055612B5C7FC000944074 /* StarterCars.swift */,
 				C29F710C2B50457F00A7D139 /* Assets.xcassets */,
 				C29F710E2B50457F00A7D139 /* Preview Content */,
 				C29F71322B504A8300A7D139 /* Car.swift */,
@@ -263,6 +266,7 @@
 			files = (
 				C29F710B2B50457E00A7D139 /* ContentView.swift in Sources */,
 				C29F71092B50457E00A7D139 /* CarCustomiserApp.swift in Sources */,
+				C24055622B5C7FC000944074 /* StarterCars.swift in Sources */,
 				C29F71332B504A8300A7D139 /* Car.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
