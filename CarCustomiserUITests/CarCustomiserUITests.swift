@@ -31,10 +31,11 @@ final class CarCustomiserUITests: XCTestCase {
         let tablesQuery = app.tables
         tablesQuery.switches["Exhaust Package (500)"].tap()
         tablesQuery.switches["Tires Package (500)"].tap()
-        
+
         //assert
         XCTAssertEqual(tablesQuery.switches["Boost Package (500)"].isEnabled, false)
         XCTAssertEqual(tablesQuery.switches["Upgrade Package (500)"].isEnabled, false)
+        
         
         
         
