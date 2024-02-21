@@ -32,6 +32,8 @@ struct ContentView: View {
     @State private var tiresPriceCheck = true
     @State private var boostPriceCheck = true
     @State private var upgradePriceCheck = true
+    @State private var remainingTime = 30
+    @State private var nextCarCheck = true
 
 
 
@@ -49,6 +51,8 @@ struct ContentView: View {
 //
 //    }
     
+    var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+        
     var body: some View {
         
         let exhaustPackageBinding = Binding<Bool> (
@@ -181,6 +185,21 @@ struct ContentView: View {
         )
         
         VStack {
+            Text("\(remainingTime)")
+                .onReceive(timer) { _ in
+                    if self.remainingTime > 0 {
+                        self.remainingTime -= 1
+                    }
+                    else {
+                        self.exhaustPriceCheck = false
+                        self.tiresPriceCheck = false
+                        self.boostPriceCheck = false
+                        self.upgradePriceCheck = false
+                        self.nextCarCheck = false
+                    }
+                    
+                }
+                .foregroundColor(.red)
             Form {
                 VStack (alignment: .leading, spacing: 20) {
                     Text("\(starterCars.cars[selectedCar].displayStats())")
@@ -188,6 +207,7 @@ struct ContentView: View {
                         selectedCar += 1
                         resetDisplay()
                     })
+                        .disabled(!nextCarCheck)
                     Section {
                         Toggle("Exhaust Package (500)", isOn: exhaustPackageBinding)
                             .disabled(!exhaustPriceCheck)
